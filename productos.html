@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Colombiana</title>
+    <!-- Fuentes y estilos externos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="productos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reset-css/5.0.1/reset.min.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">    
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="header-top">
+            <h1>Comidas Típicas Colombianas</h1>
+        </div>
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">      
+        <main>
+            <!-- Sección de productos -->
+            <section id="productos" class="productos">
+                <h2>Productos disponibles</h2>
+                <div class="productos-grid">
+                    <!-- Producto 1 -->
+                    <div class="producto">
+                        <img src="img/bandejapaisas.webp" alt="Bandeja paisa" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Bandeja paisa</h3>
+                            <p class="precio">$26.500</p>
+                            <button class="agregar-carrito" data-producto="Bandeja paisa" data-precio="26500">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Arroz</li>
+                                <li>Frijoles</li>
+                                <li>Carne</li>
+                                <li>Chorizo</li>
+                                <li>Huevos</li>
+                                <li>Aguacate</li>
+                                <li>Plátano</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 2 -->
+                    <div class="producto">
+                        <img src="img/ajiacosantafereño.webp" alt="Ajiaco" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Ajiaco</h3>
+                            <p class="precio">$24.000</p>
+                            <button class="agregar-carrito" data-producto="Ajiaco" data-precio="24000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Pollo</li>
+                                <li>Papas</li>
+                                <li>Crema de leche</li>
+                                <li>Mazorca</li>
+                                <li>Guasca</li>
+                                <li>Alcaparras</li>
+                                <li>Aguacate</li>
+                                <li>Cebolla</li>
+                                <li>Ajo</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 3 -->
+                    <div class="producto">
+                        <img src="img/arrozconcocoypescadofrito.webp" alt="Arroz con coco y pescado frito" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Arroz con coco y pescado frito</h3>
+                            <p class="precio">$37.000</p>
+                            <button class="agregar-carrito" data-producto="Arroz con coco y pescado frito" data-precio="37000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Arroz</li>
+                                <li>Pescado</li>
+                                <li>Aceite</li>
+                                <li>Coco</li>
+                                <li>Plátano</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 4 -->
+                    <div class="producto">
+                        <img src="img/pabellonllanero.webp" alt="Pabellón llanero" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Pabellón llanero</h3>
+                            <p class="precio">$53.000</p>
+                            <button class="agregar-carrito" data-producto="Pabellón llanero" data-precio="53000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Carne</li>
+                                <li>Arroz</li>
+                                <li>Caraotas</li>
+                                <li>Plátano</li>
+                                <li>Queso</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 5 -->
+                    <div class="producto">
+                        <img src="img/sancocho.webp" alt="Sancocho" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Sancocho</h3>
+                            <p class="precio">$42.000</p>
+                            <button class="agregar-carrito" data-producto="Sancocho" data-precio="42000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Carne</li>
+                                <li>Plátano</li>
+                                <li>Papa</li>
+                                <li>Yuca</li>
+                                <li>Cilantro</li>
+                                <li>Cebolla</li>
+                                <li>Especias</li>
+                                <li>Ajo</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 6 -->
+                    <div class="producto">
+                        <img src="img/Pirarucuahumado1.webp" alt="Pirarucú ahumado" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Pirarucú ahumado</h3>
+                            <p class="precio">$48.000</p>
+                            <button class="agregar-carrito" data-producto="Pirarucú ahumado" data-precio="48000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Pescado pirarucú</li>
+                                <li>Cebolla</li>
+                                <li>Ajo</li>
+                                <li>Aceite</li>
+                                <li>Especias</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 7 -->
+                    <div class="producto">
+                        <img src="img/encocadodecamarones1.webp" alt="Encocado de camarones" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Encocado de camarones</h3>
+                            <p class="precio">$48.000</p>
+                            <button class="agregar-carrito" data-producto="Encocado de camarones" data-precio="48000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Camarones</li>
+                                <li>Leche de coco</li>
+                                <li>Cebolla</li>
+                                <li>Ajo</li>
+                                <li>Cilantro</li>
+                                <li>Achote</li>
+                                <li>Aceite</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Producto 8 -->
+                    <div class="producto">
+                        <img src="img/Tamaldepiangua.webp" alt="Tamal" class="producto-imagen">
+                        <div class="producto-info">
+                            <h3>Tamal</h3>
+                            <p class="precio">$18.000</p>
+                            <button class="agregar-carrito" data-producto="Tamal" data-precio="18000">Agregar</button>
+                            <button class="mostrar-mas">Ver Ingredientes</button>
+                            <ul class="ingredientes" style="display: none;">
+                                <li>Masa de maíz</li>
+                                <li>Carne</li>
+                                <li>Arroz</li>
+                                <li>Zanahoria</li>
+                                <li>Huevo</li>
+                                <li>Ajo</li>
+                                <li>Cebolla</li>
+                                <li>Pimienta</li>
+                                <li>Hojas de plátano</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+
+            <!-- Sección del carrito -->
+            <section id="carrito" class="carrito">
+                <div id="carrito">
+                    <h2>Carrito de Compras</h2>
+                    <table id="carrito-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrito-container"></tbody>
+                    </table>
+                    <p id="total">Total: $0</p>
+                    <button id="boton-pagar">Pagar</button>
+                </div>                
+            </section>
+        </main>
+    </div>
+
+    
+    <footer>
+        <p>Síguenos en nuestras redes sociales o contáctanos directamente:</p>
+        <div class="social-icons">
+            <a href="mailto:yossermen7@hotmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            <a href="https://wa.me/573195397629" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>
