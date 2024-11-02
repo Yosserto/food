@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Colombiana</title>
+    <!-- Fuentes y estilos externos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="productos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reset-css/5.0.1/reset.min.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">    
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="header-top">
+            <h1>Comidas Típicas Colombianas</h1>
+        </div>
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">      
+        <main>
+            <!-- Sección de productos -->
+            <section id="productos" class="productos">
+                <h2>Productos disponibles</h2>
+                <div class="productos-grid" id="productosGrid"></div>
+            </section>
+            
+            <!-- Sección del carrito -->
+            <section id="carrito" class="carrito">
+                <div>
+                    <h2>Carrito de Compras</h2>
+                    <table id="carrito-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrito-container"></tbody>
+                    </table>
+                    <p id="total">Total: $0</p>
+                    <button id="boton-pagar">Pagar</button>
+                </div>                
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Síguenos en nuestras redes sociales o contáctanos directamente:</p>
+        <div class="social-icons">
+            <a href="mailto:yossermen7@hotmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            <a href="https://wa.me/573195397629" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>

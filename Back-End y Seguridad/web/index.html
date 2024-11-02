@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Colombiana</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reset-css/5.0.1/reset.min.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="header-top">
+            <h1>Comidas Típicas Colombianas</h1>
+        </div>
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Sección de introducción -->
+        <section class="intro">
+            <img src="img/bandejapaisa.webp" alt="Bandeja paisa" class="intro-img" loading="lazy">
+            <p>
+                Colombia es un país con una rica diversidad gastronómica, reflejada en sus platos típicos que varían según la región. En la región Andina, se encuentran platos como la bandeja paisa, un plato típico de Medellín que incluye carne, chorizo, chicharrón, huevo, arepa y frijoles. En la región Caribe, se destaca la sancocho, un estofado de carne y verduras, y el arroz con coco, un plato típico de la costa. La región Pacífica es famosa por sus platos de mariscos, como el ceviche y el caldo de mariscos. Mientras que en la región Amazónica, se come mucho pescado y platos elaborados con ingredientes silvestres. ¡Disfruta de la gastronomía colombiana!
+            </p>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/4eEbxUo7kAc" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección de regiones -->
+    <section class="regions">
+        <div class="region-card" id="andina">
+            <img src="img/ajiaco1.webp" alt="Delicioso ajiaco" class="region-img" loading="lazy">
+            <div class="region-info">
+                <h2>Región Andina</h2>
+                <p>La región Andina es conocida por su rica gastronomía influenciada por la cultura indígena y española. Uno de los platos más emblemáticos es la bandeja paisa, que incluye carne, chorizo, chicharrón, huevo, arepa y frijoles. Otro plato típico es el ajiaco, un caldo de pollo con papas y maíz.</p>
+                <button class="menu-button" onclick="mostrarMas('andina')">Mostrar más</button>
+            </div>
+        </div>
+
+        <div class="region-card" id="caribe">
+            <img src="img/caldopescado1.webp" alt="Rica comida de mar" class="region-img" loading="lazy">
+            <div class="region-info">
+                <h2>Región Caribe</h2>
+                <p>La región Caribe es conocida por su deliciosa gastronomía influenciada por la cultura africana, española e indígena. Uno de los platos más emblemáticos es el sancocho, un estofado de carne y verduras. Otro plato típico es el arroz con coco.</p>
+                <button class="menu-button" onclick="mostrarMas('caribe')">Mostrar más</button>
+            </div>
+        </div>
+
+        <div class="region-card" id="amazonica">
+            <img src="img/Pirarucuahumado1.webp" alt="Lo natural y exquisito" class="region-img" loading="lazy">
+            <div class="region-info">
+                <h2>Región Amazónica</h2>
+                <p>La región Amazónica es famosa por su gastronomía única, influenciada por la cultura indígena. Uno de los platos más representativos es el Pirarucú ahumado, preparado con pescado fresco capturado en los ríos.</p>
+                <button class="menu-button" onclick="mostrarMas('amazonica')">Mostrar más</button>
+            </div>
+        </div>
+
+        <div class="region-card" id="pacifica">
+            <img src="img/encocadodecamarones1.webp" alt="La sazón de Colombia" class="region-img" loading="lazy">
+            <div class="region-info">
+                <h2>Región Pacífica</h2>
+                <p>La región Pacífica es conocida por su gastronomía de mariscos. El encocado de camarones es un plato típico preparado con una salsa de coco, cilantro, ajo y cebolla.</p>
+                <button class="menu-button" onclick="mostrarMas('pacifica')">Mostrar más</button>
+            </div>
+        </div>
+
+        <div class="region-card" id="orinoquia">
+            <img src="img/llanos.webp" alt="La gran parrilla Colombiana" class="region-img" loading="lazy">
+            <div class="region-info">
+                <h2>Región Orinoquía</h2>
+                <p>La región Orinoquía es famosa por su carne a la llanera, preparada a la brasa y acompañada con papas, yuca y plátano.</p>
+                <button class="menu-button" onclick="mostrarMas('orinoquia')">Mostrar más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del mapa -->
+    <section class="mapa">
+        <p>Colombia está ubicada en el Norte de Sudamérica</p>
+        <div class="mapa-contenido">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16257413.074525543!2d-85.0082686941522!3d5.8422349036159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1724628821092!5m2!1ses!2sco"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o comentario? ¡Nos encantaría saber de ti!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Síguenos en nuestras redes sociales o contáctanos directamente:</p>
+        <div class="social-icons">
+            <a href="mailto:yossermen7@hotmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            <a href="https://wa.me/573195397629" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
